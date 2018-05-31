@@ -4,7 +4,7 @@ from PIL import Image
 import pytesseract
 import cv2
 
-path = "img\\text-img.png"
+path = "./img/text-img.png"
 
 text = pytesseract.image_to_string(Image.open(path), lang='chi_sim')
 print(text)
